@@ -47,7 +47,7 @@ def create_page2():
     else:
         # Filter the data by the selected state
         filtered_data = df.groupby(['year', 'subgroup'])['val'].mean().reset_index()
-        st.title("The Median Expenditure of Healthcare Services Over Time")
+        st.subheader("The Average Spending on Healthcare Services Over Time")
         # Create a line chart using Altair
         chart = alt.Chart(filtered_data).mark_line().encode(
             x='year',
