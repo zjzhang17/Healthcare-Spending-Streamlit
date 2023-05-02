@@ -61,7 +61,7 @@ def create_page2():
         # Display the chart using Streamlit
         st.altair_chart(chart, use_container_width=True)
         
-with open("map.json") as f:
+with open("/Users/jasonzhang/Documents/USA_Health_Spending/map.json") as f:
     geomap = json.load(f)
 
     
@@ -89,6 +89,68 @@ def create_page3():
     
     st.plotly_chart(fig)
     st.write('This map displays the per capita spending by U.S. states from 2003 to 2019. Alaska and Hawaii have the highest per capita spending among all U.S. states')
+
+
+
+
+
+
+
+
+
+
+
+           
+# Define the function that creates the second page
+def create_page4():
+    st.title("Inflation of the US Dollar")
+    image = 'inflation.jpeg'
+    st.image(image, caption='Source: [https://www.visualcapitalist.com/purchasing-power-of-the-u-s-dollar-over-time/]')
+    text3 = "According to data from the Bureau of Labor Statistics, the average annual increase in healthcare spending per person in the United States has been higher than the overall inflation rate of the US dollar. From 2000 to 2020, the average annual increase in healthcare spending per person was 4.3%, while the average annual inflation rate of the US dollar was 2.1%. This means that healthcare spending has been increasing at a faster rate than the overall cost of goods and services in the economy. However, it's important to note that these are national averages and individual experiences with healthcare costs may vary depending on factors such as location, insurance coverage, and medical history."
+    st.write(text3)
+
+# Define the function that creates the fourth page
+def create_page5():
+    st.title("Future Work")
+    image = 'lower_health_costs.png'
+    st.image(image, caption='Source: [https://www.wellsteps.com/blog/2020/01/02/benefits-of-wellness-lower-health-care-costs/]')
+    
+    # Create a list of fixes
+    fixes = [
+        "Implement price transparency regulations for hospitals, clinics, and drug companies",
+        "Encourage competition among healthcare providers",
+        "Increase funding for preventive care and public health initiatives",
+        "Expand access to affordable healthcare through public insurance options",
+        "Support research and development of new medical technologies and treatments",
+        "Reduce administrative costs and paperwork for healthcare providers",
+        "Address the high cost of prescription drugs",
+        "Encourage healthy behaviors and lifestyle choices through education and incentives",
+        "Invest in healthcare workforce training and development",
+        "Promote evidence-based medicine and reduce unnecessary medical procedures"
+    ]
+
+    # Display the list using Streamlit
+    st.write("Here are some ways to fix rising healthcare costs:")
+    for fix in fixes:
+        st.write("- " + fix)
+
+
+
+
+# Create a dictionary that maps page names to functions
+pages = {
+    "Introduction": create_page1,
+    "Healthcare Spending": create_page2,
+    "Spending Over Time by U.S. State": create_page3,
+    "Inflation": create_page4,
+    "Conclusion": create_page5
+}
+
+# Create a selector for choosing the page
+page = st.sidebar.selectbox("Select a Page", list(pages.keys()))
+
+# Call the function for the selected page
+pages[page]()
 
 
 
