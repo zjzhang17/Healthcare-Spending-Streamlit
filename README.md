@@ -17,4 +17,5 @@ Link to the Streamlit app: https://zjzhang17-healthcare-spending-stream-usa-heal
 # Future Work: 
 I want to understand why Hawaii and Alaska have the highest healthcare spending per capita in the U.S. I would need to research how isolation in Alaska and Hawaii affect the cost of living and healthcare delivery.
 
+# python --version
 Python 3.10.9
