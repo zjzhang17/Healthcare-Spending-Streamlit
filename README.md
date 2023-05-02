@@ -12,8 +12,7 @@ Using Python code in Microsoft Visual Studio Code, I created both a line chart a
 
 Overall, the dataset provided valuable insights into the increasing costs of healthcare spending in the US, which were effectively visualized through the line chart, bar chart, and map.
 
-Link to the Streamlit app: https://zjzhang17-healthcare-spending-stream-usa-health-spending-9mu89y.streamlit.app/
-
+Link to the Streamlit app: https://zjzhang17-healthcare-spending-stream-usa-health-spending-u6fzaj.streamlit.app/
 # Future Work: 
 I want to understand why Hawaii and Alaska have the highest healthcare spending per capita in the U.S. I would need to research how isolation in Alaska and Hawaii affect the cost of living and healthcare delivery.
 
