@@ -66,7 +66,7 @@ with open("map.json") as f:
 
     
 def create_page3():
-    st.title('Per Capita Spending by U.S. States: A Map Comparison from 2003 to 2019')
+    st.title('Per Capita Healthcare Spending by States Over Time')
     df = pd.read_csv('USA_STATE_HEALTH_SPENDING.csv')
     df2 = df[df['metric']=='Spending per capita']
     
@@ -141,7 +141,7 @@ def create_page5():
 pages = {
     "Introduction": create_page1,
     "Healthcare Spending": create_page2,
-    "Spending Over Time by U.S. State": create_page3,
+    "Spending Over Time Map": create_page3,
     "Inflation": create_page4,
     "Conclusion": create_page5
 }
