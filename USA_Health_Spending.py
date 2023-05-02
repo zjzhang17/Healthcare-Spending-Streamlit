@@ -61,7 +61,7 @@ def create_page2():
         # Display the chart using Streamlit
         st.altair_chart(chart, use_container_width=True)
         
-with open("/Users/jasonzhang/Documents/USA_Health_Spending/map.json") as f:
+with open("map.json") as f:
     geomap = json.load(f)
 
     
