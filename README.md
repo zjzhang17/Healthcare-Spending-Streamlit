@@ -14,7 +14,7 @@ Overall, the dataset provided valuable insights into the increasing costs of hea
 
 Link to the Streamlit app: https://zjzhang17-healthcare-spending-stream-usa-health-spending-u6fzaj.streamlit.app/
 # Future Work: 
-I want to understand why Hawaii and Alaska have the highest healthcare spending per capita in the U.S. I would need to research how isolation in Alaska and Hawaii affect the cost of living and healthcare delivery.
+In my future work, I want to understand why Hawaii and Alaska have the highest healthcare spending per capita in the US. I would need to research how isolation in Alaska and Hawaii affect the cost of living and healthcare delivery. In addition, I would like to obtain a dataset of healthcare spending in European countries and compare the per capita spending to US healthcare system. 
 
 # python --version
 Python 3.10.9
