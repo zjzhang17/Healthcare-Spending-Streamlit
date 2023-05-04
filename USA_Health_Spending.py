@@ -88,7 +88,7 @@ def create_page3():
     fig.update_layout(margin={"r":0, "t":0, "l":0, "b":0})
     
     st.plotly_chart(fig)
-    st.write('This map displays the per capita spending by U.S. states from 2003 to 2019. Alaska and Hawaii have the highest per capita spending among all U.S. states')
+    st.write('This map of the USA displays the per capita spending by states from 2003 to 2019. Alaska and Hawaii have the highest per capita spending among all states')
 
 
 
